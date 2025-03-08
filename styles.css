@@ -157,12 +157,14 @@ textarea{
 }
 
 #onion:hover{
+    pointer-events: unset;
     transform: translate(0, 100%);
     opacity: 0;
     transition: 2s;
 }
 #onion:not(:hover){
-    /* transform: translate(1vh, 0); */
+    pointer-events: unset;
+    transform: translate(1vh, 0);
     transition: 5s;
     
 }
