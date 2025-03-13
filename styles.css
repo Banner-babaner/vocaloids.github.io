@@ -9,7 +9,7 @@ body{
 /* h1{
     margin: 0;
 } */
-img { pointer-events: none; }
+
 header{
     color: #ade3d8;
     position: sticky;
@@ -82,12 +82,55 @@ textarea{
     margin-top :0;
     width: fit-content;
 }
+/* #bb{
+    padding: 0;
+    z-index: 101;
+    position: fixed;
+    top: min(1vh, 1vw);
+    left: min(1vh, 1vw);
+    box-sizing: border-box;
+    
+    height: max(7vw, 10vh);
+    border: 0;
+} */
+#bimg{
+    width: max(7vw, 10vh);
+    order: -1;
+    justify-self: flex-start;
+    position: fixed;
+    left: min(2vh, 2vw);
+    top: min(1vh, 1vw);
+    z-index: 101900;
+    display: none;
+    /* height: calc(max(7vw, 10vh)-min(1vh, 1vw)-min(1vh, 1vw)-min(1vh, 1vw)); */
+
+    
+}
+#burger{
+    display: none;
+    width: 20vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #3b9aa5;
+    z-index: 9;
+    padding-top: max(7vw, 10vh);
+    padding-bottom: 10vh;
+    opacity: 0.9;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-inline: 3vw;
+    font-size: 1.2em;
+    font-weight: bold;
+}
 #logo{
     text-align: center;
     /* width: max(5vh, 10vw); */
     height: 100%;
     display: flex;
     align-items: center;
+
 }
 #logo>img{
     border-radius: 100%;
@@ -97,6 +140,7 @@ textarea{
     height: 100%;
     border: 5px solid white;
 }
+
 #banner{
     background-image: url("images/back.png");
     box-sizing: border-box;
@@ -160,14 +204,12 @@ textarea{
 }
 
 #onion:hover{
-    pointer-events: unset;
     transform: translate(0, 100%);
     opacity: 0;
     transition: 2s;
 }
 #onion:not(:hover){
-    pointer-events: unset;
-    transform: translate(1vh, 0);
+    /* transform: translate(1vh, 0); */
     transition: 5s;
     
 }
@@ -299,10 +341,7 @@ textarea{
     flex-direction: column;
     row-gap: 2vw;
 }
-#third>p{
-    /* max-width: 60%; */
 
-}
 #third>img{
     /* width: 500px;
     flex-shrink: 0;
@@ -310,7 +349,6 @@ textarea{
     max-height: max(40vw, 30vh);
     border: 1px solid black;
     align-self: center;
-    margin: 0;
 }
 
 footer{
@@ -330,7 +368,7 @@ footer>p{
     /* width: clamp(40%, 60%, 100%); */
     /* width: clamp(40%, 100%, 100%); */
     width: min(80vh, 80vw);
-    height: min(60vh, 60vw);
+    height: max(60vh, 60vw);
     flex-shrink: 0.1;
 }
 #inputs{
