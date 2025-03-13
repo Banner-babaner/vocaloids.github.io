@@ -123,6 +123,8 @@ textarea{
     padding-inline: 3vw;
     font-size: 1.2em;
     font-weight: bold;
+    border: 5px ridge white;
+    border-left: 0;
 }
 #logo{
     text-align: center;

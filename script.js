@@ -1,7 +1,7 @@
 window.onload = ()=>{
     
     const burger = document.getElementById("burger");
-    if(navigator.userAgent.match(/iPad/i)||navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/Android/i)){
+    if(/mobile|iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase())){
         document.getElementById("text_logo").style.display = "none";
         var burger_opened = false;
         const bimg = document.getElementById("bimg");
@@ -20,3 +20,8 @@ window.onload = ()=>{
         
     }
 }
+
+   
+
+  
+  
