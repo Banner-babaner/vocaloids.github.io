@@ -108,7 +108,7 @@ textarea{
 }
 #burger{
     display: none;
-    width: 20vw;
+    width: 30vw;
     height: 100vh;
     position: fixed;
     top: 0;
