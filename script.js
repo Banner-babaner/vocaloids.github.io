@@ -1,5 +1,4 @@
-window.onload = ()=>{
-    
+function adaptive(){
     const burger = document.getElementById("burger");
     if(/mobile|iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase())){
         document.getElementById("text_logo").style.display = "none";
